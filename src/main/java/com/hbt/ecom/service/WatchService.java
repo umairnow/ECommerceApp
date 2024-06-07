@@ -23,6 +23,7 @@ public class WatchService {
     this.watchRepository = watchRepository;
   }
 
+  // TODO: Remove this method after testing
   @PostConstruct
   public void populateTestData() {
     List<Watch> watches = Arrays.asList(
