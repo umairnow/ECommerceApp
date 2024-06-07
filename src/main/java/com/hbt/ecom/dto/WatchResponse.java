@@ -6,9 +6,9 @@ import lombok.Data;
 
 @Data
 public class WatchResponse {
-  private final BigDecimal totalPrice;
+  private final BigDecimal price;
 
   public WatchResponse(BigDecimal totalPrice) {
-    this.totalPrice = totalPrice;
+    this.price = totalPrice;
   }
 }

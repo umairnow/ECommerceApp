@@ -35,6 +35,10 @@ public class WatchService {
     watchRepository.saveAll(watches);
   }
 
+  public List<Watch> getAllWatches() {
+    return (List<Watch>) watchRepository.findAll();
+  }
+
   public BigDecimal checkout(List<Long> watchIds) {
     return watchIds.stream()
                    .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
