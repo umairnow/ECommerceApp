@@ -9,7 +9,7 @@ This application provides a Spring Boot API for a basic e-commerce checkout syst
 ## Getting Started
 
 ### Prerequisites
-- Java 22+
+- Java 17+
 - Maven build tool
 ### Installation
 1. Clone the repository
@@ -92,3 +92,4 @@ mvn test
 - <b>Monitoring:</b> Implement monitoring and alerting to track application performance and health.
 - <b>Data Model:</b> The current implementation uses `Long` data type for the Watch entity's id field. In the future, this will be changed to `UUID` to provide a more robust and globally unique identifier for watches. This change will improve data integrity and avoid potential conflicts arising from relying on sequential `Long` values.
 - <b>Modularization:</b> The current implementation is a monolithic application. In the future, the application can be modularized into microservices to improve scalability and maintainability. In addition to that, there can be separate controllers for listing and checkout operations to improve code readability and maintainability.
+- <b>Running and Deployment:</b> I could spend little more time to setup Dockerfile and docker-compose file to run the application in a containerized environment. This will make it easier to deploy the application in different environments.
