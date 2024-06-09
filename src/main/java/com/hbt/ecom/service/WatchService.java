@@ -1,7 +1,6 @@
 package com.hbt.ecom.service;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -26,7 +25,7 @@ public class WatchService {
   // TODO: Remove this method after testing
   @PostConstruct
   public void populateTestData() {
-    List<Watch> watches = Arrays.asList(
+    List<Watch> watches = List.of(
       new Watch("Rolex", BigDecimal.valueOf(100), BigDecimal.valueOf(200), 3),
       new Watch("Michael Kors", BigDecimal.valueOf(80), BigDecimal.valueOf(120), 2),
       new Watch("Swatch", BigDecimal.valueOf(50), null, null),
