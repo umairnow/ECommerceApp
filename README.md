@@ -32,20 +32,36 @@ mvn spring-boot:run
   - Example response:
   ```json
     [
-        {
-            "id": 1,
-            "name": "Rolex",
-            "price": 100,
-            "discount": 200
-        },
-        {
-            "id": 2,
-            "name": "Michael Kors",
-            "price": 80,
-            "discount": 120
-        }
+      {
+        "id": 1,
+        "name": "Rolex",
+        "unitPrice": 100.00,
+        "discount": 200.00,
+        "quantityForDiscount": 3
+      },
+      {
+        "id": 2,
+        "name": "Michael Kors",
+        "unitPrice": 80.00,
+        "discount": 120.00,
+        "quantityForDiscount": 2
+      },
+      {
+        "id": 3,
+        "name": "Swatch",
+        "unitPrice": 50.00,
+        "discount": null,
+        "quantityForDiscount": null
+      },
+      {
+        "id": 4,
+        "name": "Casio",
+        "unitPrice": 30.00,
+        "discount": null,
+        "quantityForDiscount": null
+      }
     ]
-    ```
+
 - POST `/api/v1/watches` 
   - Accepts a JSON object with a list of watch IDs and returns the total price after applying discounts if available
   - Example request:
